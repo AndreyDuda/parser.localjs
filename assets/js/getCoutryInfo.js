@@ -2,8 +2,7 @@ function getInfo(countryId) {
     var preloader = document.getElementById('preloader');
     preloader.style.display = 'block';
     var script = document.createElement('script');
-    script.src = 'http://www.ringcentral.com/api/index.php?cmd=getInternationalRates&param[internationalRatesRequest][brandId]=1210&param[internationalRatesRequest][countryId]=' + countryId +
-        '&param[internationalRatesRequest][tierId]=3311&typeResponse=json&callback=buildResponse';
+    script.src = 'http://www.ringcentral.com/api/index.php?cmd=getInternationalRates&param[internationalRatesRequest][brandId]=1210&param[internationalRatesRequest][countryId]=' + countryId + '&param[internationalRatesRequest][tierId]=3311&typeResponse=json&callback=buildResponse';
     document.body.append(script);
 }
 

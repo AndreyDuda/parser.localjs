@@ -3,7 +3,7 @@
     var button = document.getElementById('country_button');
     var script = document.createElement('script');
 
-    script.src = `http://www.ringcentral.com/api/index.php?cmd=getCountries&typeResponse=json&callback=buildSelect'`;
+    script.src = 'http://www.ringcentral.com/api/index.php?cmd=getCountries&typeResponse=json&callback=buildSelect';
     document.body.append(script);
 
     select.addEventListener('change', function(e) {
@@ -22,8 +22,8 @@
 function buildSelect(response) {
     var select = document.getElementById('country');
     response.result.forEach((element) => {
-        var option = document.createElement("option");
-        option.setAttribute("value", element.id);
+        var option = document.createElement('option');
+        option.setAttribute('value', element.id);
         option.innerHTML = element.name;
         select.appendChild(option);
     });

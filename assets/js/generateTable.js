@@ -4,7 +4,7 @@ function generateTableBody(infoJson) {
     tableBody.innerHTML = '';
 
     for (var key in infoJson) {
-        var tr = document.createElement("tr");
+        var tr = document.createElement('tr');
         var CountryInfo = infoJson[key];
         for (var prop in CountryInfo) {
             if (CountryInfo.hasOwnProperty(prop) && typeof CountryInfo[prop] === 'object') {
