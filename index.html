@@ -1,0 +1,42 @@
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <title>International dialing rates from North America</title>
+
+    <meta name="description" content="International dialing rates from North America"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="country">
+        <label class="country_label">
+            <select id="country" class="country_select" disabled>
+                <option class="country_item" value="0">select country</option>
+            </select>
+            <button class="country_button" id="country_button" disabled>Confirm</button>
+        </label>
+
+        <table id="countryTable" class="country_table">
+            <thead>
+            <tr>
+                <th>Country</th>
+                <th>Type</th>
+                <th>Code</th>
+                <th>Rate per minute</th>
+            </tr>
+            </thead>
+            <tbody id="countryTableBody">
+            </tbody>
+        </table>
+        <div class="preloader" id="preloader"></div>
+    </div>
+</div>
+</body>
+<script src="assets/js/initForm.js"></script>
+<script src="assets/js/getCoutryInfo.js"></script>
+<script src="assets/js/generateTable.js"></script>
+</html>

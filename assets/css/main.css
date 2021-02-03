@@ -1,0 +1,134 @@
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.country {
+    width: 800px;
+    margin: 200px auto 0;
+}
+
+.country_select {
+    display: inline-block;
+    width: 600px;
+    height: 42px;
+    outline: none;
+    padding: 10px;
+}
+
+.country_button {
+    display: inline-block;
+    width: 125px;
+    height: 42px;
+    margin-left: 70px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #1071b6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0,0,0,1);
+    outline: none;
+}
+
+.country_button:active {
+    box-shadow: 0 2px 5px rgba(0,0,0,1);
+}
+.country_button:disabled {
+    box-shadow: none;
+    background-color: #ccc;
+}
+
+.country_item {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.country_table {
+    text-align: left;
+    width: 100%;
+    margin-top: 40px;
+    border-collapse: collapse;
+}
+
+.country_table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.country_table th,
+.country_table td {
+    min-width: 150px;
+    word-break: break-word;
+    padding: 10px;
+}
+
+.country_table th {
+    word-break: unset;
+}
+
+/* Preloader */
+.preloader {
+    display: none;
+    position: relative;
+    min-height: 60px;
+}
+
+.preloader:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, .9);
+    height: 100%;
+    width: 100%;
+    display: block !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.preloader:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    border: 4px rgba(0, 0, 0, .25) solid;
+    border-top: 4px #1071b6 solid;
+    border-radius: 50%;
+    -webkit-animation: preloader .6s infinite linear;
+    animation: preloader .6s infinite linear;
+}
+
+@-webkit-keyframes preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
