@@ -14,6 +14,8 @@
     });
 
     button.addEventListener('click', function(e) {
+        this.disabled = true;
+        select.disabled = true;
         var id = e.target.dataset.id;
         getInfo(id);
     })
